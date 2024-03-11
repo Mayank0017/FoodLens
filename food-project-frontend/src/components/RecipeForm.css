@@ -1,0 +1,111 @@
+.RecipeForm-container {
+  position: fixed;
+  height: 90vh;
+  width: 50%;
+  left: 40ch;
+  top: 2.5%;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 15px 15px 10px gray;
+  z-index: 999;
+  overflow: scroll;
+  background: linear-gradient(to right, #23d5ab, deepskyblue);
+}
+
+
+.RecipeForm-input,
+.RecipeForm-textarea {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  outline: none;
+}
+
+
+.RecipeForm-button {
+  padding: 10px 20px;
+  margin: 10px;
+  background-color: #1fc291;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.5s;
+  margin-left: 10px;
+}
+
+.RecipeForm-button:hover {
+  background-color: #1fc291;
+  border-radius: 40px;
+}
+
+.RecipeForm-add-input-button {
+  margin-left: 10px;
+  border-radius: 30px 30px 30px 30px;
+  background-color: #1fc291;
+}
+
+.dot {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background-image: linear-gradient(to right, cyan, #ff69b4);
+}
+
+.RecipeForm-input-container {
+  margin: 15px;
+  margin-left: 10px;
+  position: relative;
+}
+
+.RecipeForm-input-container input {
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  background: ghostwhite;
+  box-sizing: border-box;
+  color: black;
+  outline: none;
+  font-size: 20px;
+}
+
+
+
+.RecipeForm-input-container label {
+  position: absolute;
+  left: 10px;
+  top: 12px;
+  font-size: 20px;
+  transition: 0.3s;
+  color: #555;
+  opacity: 0.3;
+}
+
+.RecipeForm-input-container:focus-within label
+{
+  top: -15px;
+  left: -1px;
+  font-size: 18px;
+  padding: 0 2px;
+  opacity: 1;
+}
+.RecipeForm-input-container:focus-within input {
+  border-width: 2.5px;
+  border-color: cornflowerblue;
+  opacity: 1;
+}
+
+.RecipeForm-input-container:focus-within textarea {
+  border-width: 2.5px;
+  border-color: lightgreen;
+  opacity: 1;
+}
+
+

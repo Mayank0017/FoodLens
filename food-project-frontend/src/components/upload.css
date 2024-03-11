@@ -1,0 +1,159 @@
+.file-upload-ui {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--bg-gradient);
+}
+
+.upload-box {
+  width: 95vw;
+  text-align: center;
+  box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.1); /* Add this line for box shadow */
+  background: white;
+}
+
+.upload-contents {
+  display: inline-block;
+  padding-top: 5vh;
+}
+
+.dotted-border {
+  width: 100%;
+  height: 50vh; /* Use viewport height to make it responsive */
+  border: 4px dashed #ccc;
+  padding: 3px;
+  cursor: pointer;
+  box-sizing: border-box; /* Include padding in the height calculation */
+}
+
+input[type="file"] {
+  display: none;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
+
+.success-message {
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+  background: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  border-radius: 10px;
+  text-align: center;
+  backdrop-filter: blur(10px); /* Apply a blur effect to the background */
+  z-index: 1000;
+}
+
+.success-message h2 {
+  margin-bottom: 10px;
+  background: linear-gradient(to right, #4caf50, #2196f3);;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+.processing-animation {
+  display: flex;
+  justify-content: space-around;
+}
+
+.circle1 {
+  width: 80px;
+  height: 80px;
+  margin: 30px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: circleAnimation 4s forwards;
+}
+
+.circle2 {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff;
+  color: #fff;
+  margin: 30px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: circleAnimation 4s forwards;
+  animation-delay: 0.8s;
+}
+
+.circle3 {
+  width: 80px;
+  height: 80px;
+  background-color: #007bff;
+  margin: 30px;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: circleAnimation 4s forwards;
+  animation-delay: 1.6s;
+}
+
+@keyframes circleAnimation {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(1.5);
+    opacity: 0;
+  }
+}
+
+.tick-marks {
+  display: flex;
+  justify-content: space-around;
+  opacity: 0;
+  animation: tickAnimation 1s forwards 4s;
+}
+
+@keyframes tickAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.tick {
+  font-size: 24px;
+  color: #28a745;
+}
+
+img {
+  display: block;
+}
+
+.drag-drop {
+  font-size: 25px; /* Set the font size to make it larger */
+  font-weight: bold; /* Make the text bold */
+  color: #808080; /* Set the color to grey */
+}
+
+.upload-note {
+  font-size: 25px; /* Set the font size to make it larger */
+  font-weight: bold; /* Make the text bold */
+  color: #23a6d5; /* Set the color to grey */
+}

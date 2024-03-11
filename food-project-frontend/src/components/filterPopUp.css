@@ -1,0 +1,62 @@
+/* Add this to your CSS file */
+.filter-popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(255, 255, 255, 1);
+  padding: 20px;
+  border: 1px solid #ccc;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 450px;
+  border-radius: 10px;
+  width: 100ch;
+  max-height: 100vh;
+  z-index: 10002;
+}
+
+.filter-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.filter-header h2 {
+  margin: 0;
+}
+
+.filter-options {
+  /* Your existing styles */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.filter-checkbox {
+  /* Add margin and width to style the checkboxes */
+  margin-right: 20px; /* Adjust this as needed */
+  width: 150px; /* Adjust this as needed */
+}
+
+.filter-options label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.filter-options input {
+  margin-right: 10px;
+}
+
+.apply-button {
+  background-color: cadetblue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+  border-radius: 20px;
+}
+
+
+

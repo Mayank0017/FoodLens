@@ -1,0 +1,15 @@
+# Spacefile Docs: https://go.deta.dev/docs/spacefile/v0
+v: 0
+micros:
+  - name: food-project
+    src: food project
+    engine: python3.9
+    primary: true
+  - name: food-project-express
+    src: food-project-express
+    engine: nodejs16
+    primary: false
+  - name: food-project-frontend
+    src: food-project-frontend
+    engine: react
+    primary: false
